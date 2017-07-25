@@ -51,9 +51,9 @@ var app = {
 onCalculate: function() {
 var b = document.getElementById('leng').value;
 var h = document.getElementById('bred').value;
-if (b.length == 0 || h.length == 0)
+if (b.length === 0 || h.length === 0)
 document.getElementById('res').innerHTML = "ERROR: Please fill all the fields.";
-else if (b == 0 || h == 0)
+else if (b === 0 || h === 0)
 document.getElementById('res').innerHTML = "ERROR: Please enter valid values.";
 else {
 var x = parseInt(b);
